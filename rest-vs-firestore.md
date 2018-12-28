@@ -1,6 +1,6 @@
 # Rest vs. Firestore
 
-A quick table of common queries written in both REST and Firestore.
+A quick table of common queries written in both REST and Firestore. If you don't love this viewing format you can also [view as csv](https://docs.google.com/spreadsheets/d/13y4WdoTO0v573a-aylmiNgiYjKulfVGsljn3TskCMe4/edit#gid=0).
 
 <table class="table table-bordered table-hover table-condensed">
 <thead><tr><th title="Field #1">Func</th>
@@ -9,7 +9,7 @@ A quick table of common queries written in both REST and Firestore.
 <th title="Field #4">Notes</th>
 </tr></thead>
 <tbody><tr>
-<td colspan="4">PLURAL ROUTES</td>
+<td colspan="4"><strong>PLURAL ROUTES</strong></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -33,7 +33,7 @@ A quick table of common queries written in both REST and Firestore.
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">Use dot(.) to access deep properties</td>
+<td colspan="4"><em>Use dot(<code>.</code>) to access deep properties</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -57,19 +57,19 @@ A quick table of common queries written in both REST and Firestore.
 <td> </td>
 </tr>
 <tr>
-<td>PAGINATE</td>
+<td><strong>PAGINATE</strong></td>
 <td> </td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">Use _page and optionally _limit to paginate returned data.</td>
+<td colspan="4"><em>Use <code>_page</code> and optionally <code>_limit</code> to paginate returned data.</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">In the Link header you&#39;ll get first, prev, next and last links.</td>
+<td colspan="4"><em>In the Link header you&#39;ll get first, prev, next and last links.</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -87,13 +87,13 @@ A quick table of common queries written in both REST and Firestore.
 <td>// page not supported (use startAt and limit)</td>
 </tr>
 <tr>
-<td>SORT</td>
+<td><strong>SORT</strong></td>
 <td> </td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">Add _sort and _order (ascending order by default)</td>
+<td colspan="4"><em>Add <code>_sort</code> and <code>_order</code> (ascending order by default)</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -111,7 +111,7 @@ A quick table of common queries written in both REST and Firestore.
 <td> </td>
 </tr>
 <tr>
-<td>For multiple fields, use the following format:</td>
+<td colspan="4"><em>For multiple fields, use the following format:</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -123,13 +123,13 @@ A quick table of common queries written in both REST and Firestore.
 <td> </td>
 </tr>
 <tr>
-<td>SLICE</td>
+<td><strong>SLICE</strong></td>
 <td> </td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">Add _start and _end or _limit (an X-Total-Count header is included in the response)</td>
+<td colspan="4"><em>Add <code>_start</code> and <code>_end</code> or <code>_limit</code> (an X-Total-Count header is included in the response)</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -153,13 +153,13 @@ A quick table of common queries written in both REST and Firestore.
 <td> </td>
 </tr>
 <tr>
-<td>OPERATORS</td>
+<td><strong>OPERATORS</strong></td>
 <td> </td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">Add _gte or _lte for getting a range</td>
+<td colspan="4"><em>Add <code>_gte</code> or <code>_lte</code> for getting a range</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -171,7 +171,7 @@ A quick table of common queries written in both REST and Firestore.
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">Add _ne to exclude a value</td>
+<td colspan="4"><em>Add <code>_ne</code> to exclude a value</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -183,7 +183,7 @@ A quick table of common queries written in both REST and Firestore.
 <td>// != is not supported</td>
 </tr>
 <tr>
-<td colspan="4">Add _like to filter (RegExp supported)</td>
+<td colspan="4"><em>Add <code>_like</code> to filter (RegExp supported)</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -195,13 +195,13 @@ A quick table of common queries written in both REST and Firestore.
 <td>// RegExp is not supported</td>
 </tr>
 <tr>
-<td>FULL_TEXT SEARCH</td>
+<td><strong>FULL_TEXT SEARCH</strong></td>
 <td> </td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">Add q</td>
+<td colspan="4"><em>Add <code>q</code></em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -213,13 +213,13 @@ A quick table of common queries written in both REST and Firestore.
 <td>// not supported. other solutions: https://firebase.google.com/docs/firestore/solutions/search</td>
 </tr>
 <tr>
-<td>RELATIONSHIPS</td>
+<td><strong>RELATIONSHIPS</strong></td>
 <td> </td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
-<td colspan="4">To include children resources, add _embed</td>
+<td colspan="4"><em>To include children resources, add <code>_embed</code></em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -237,7 +237,7 @@ A quick table of common queries written in both REST and Firestore.
 <td>// cross-collection queries are not supported</td>
 </tr>
 <tr>
-<td colspan="4">To include parent resource, add _expand</td>
+<td colspan="4"><em>To include parent resource, add <code>_expand</code></em></td>
 <td> </td>
 <td> </td>
 <td> </td>
@@ -255,7 +255,7 @@ A quick table of common queries written in both REST and Firestore.
 <td>// cross-collection queries are not supported</td>
 </tr>
 <tr>
-<td colspan="4">To get or create nested resources (by default one level, add custom routes for more)</td>
+<td colspan="4"><em>To get or create nested resources (by default one level, add custom routes for more)</em></td>
 <td> </td>
 <td> </td>
 <td> </td>
